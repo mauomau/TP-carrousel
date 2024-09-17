@@ -1,0 +1,187 @@
+@font-face {
+    font-family: open sans;
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+    font-family: open sans;
+    /* background: linear-gradient(to right, #4C1A57, #BAB0D4); */
+}
+
+.carousel-item{
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform 0.5s ease , box-shadow 0.5s ease;
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5%;
+}
+
+.carousel-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease;
+}
+
+img{
+    background-size: cover;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.carousel{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Ajuste la taille du carrousel */
+    border-radius: 1rem;
+}
+
+.carousel-container{
+    position: relative;
+    width: 100%;
+    padding: 10% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-container::after{
+    content:'';
+    clear: both;
+    display: table;
+}
+
+.item{
+    float: left;
+}
+
+.button{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* caroussel.css */
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* contact */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #555;
+}
+
+input[type=text],input[type=email],textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    resize: vertical;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0.5rem rgba(0, 123, 255, 0.2);
+    transition: box-shadow 0.5s ease, border-color 0.5s ease;
+    outline: none;
+}
+
+#contact {
+    padding: 2rem;
+    width: 70%;
+    margin: 4rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* button */
+.carrousel-prev, .carrousel-next{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    transition: box-shadow 0.5s ease;
+}
+
+.carrousel-prev{
+    background: url(Image/previous_dark.svg) center center no-repeat;
+    background-size: 30px 30px;
+}
+
+.carrousel-next{
+    background: url(Image/next_dark.svg) center center no-repeat;
+    background-size: 30px 30px;
+}
+
+#carousel1{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    padding: 0rem 1rem;
+}
+
+.carrousel-prev.hidden, .carrousel-next.hidden{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.carrousel-prev:hover , .carrousel-next:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
