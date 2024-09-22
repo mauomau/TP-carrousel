@@ -39,6 +39,8 @@ img{
     width: 100%;
     max-width: 800px; /* Ajuste la taille du carrousel */
     border-radius: 1rem;
+    box-sizing: border-box;
+    margin: 2rem auto;
 }
 
 .carousel-container{
